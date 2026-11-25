@@ -1,0 +1,24 @@
+                                     ResNet-18         ViT
+Test top-1 accuracy (%)                  77.38       58.82
+Test top-5 accuracy (%)                  93.90       82.56
+Training top-1 accuracy (%)              99.97       99.97
+k-NN accuracy on features (%)            77.45       57.91
+Parameters (M)                           11.22       10.73
+FLOPs per image (G)                       0.56        0.71
+Inference speed (images/s)             103,925      65,851
+Training time per epoch (s)                4.1         7.4
+Peak GPU memory in training (GB)          0.54        1.23
+
+Hardest classes for ResNet-18:
+  boy              47%   mostly predicted as man
+  bowl             48%   mostly predicted as plate
+  man              51%   mostly predicted as woman
+  seal             54%   mostly predicted as otter
+  lizard           56%   mostly predicted as snake
+
+Hardest classes for ViT:
+  otter            26%   mostly predicted as seal
+  lizard           26%   mostly predicted as caterpillar
+  seal             29%   mostly predicted as otter
+  woman            32%   mostly predicted as girl
+  man              32%   mostly predicted as woman
